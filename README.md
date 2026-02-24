@@ -32,13 +32,17 @@ The first step in the project is generating a dataset using the simulation. The 
   - Longitudinal and lateral distances between the ambulance and ego vehicle.
   - Ego vehicle velocity and acceleration.
 
-The simulation ends on collision or when the ambulance reaches the end of the screen.
-Run the script multiple times to generate varied data (due to random initial positions).
+* The simulation ends on collision or when the ambulance reaches the end of the screen.
+  
+* Run the script multiple times to generate varied data (due to random initial positions).
 
-How to Run
+## How to Run
 
-Navigate to the simulator/ directory.
-Run the script:textpython one_vehicle_control.py
+1. Navigate to the ```simulator/``` directory.
+
+2. Run the script:
+   ```python one_vehicle_control.py```
+   
 Control the ego vehicle with arrow keys.
 Data is appended to /home/m/Paper/Code/Simulator/Right (update the path as needed for your environment).
 To generate a full dataset, run the simulation repeatedly (e.g., in a loop or manually) and process the output file into a clean CSV.
