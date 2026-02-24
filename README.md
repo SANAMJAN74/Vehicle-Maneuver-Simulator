@@ -43,36 +43,41 @@ The first step in the project is generating a dataset using the simulation. The 
 2. Run the script:
    ```python one_vehicle_control.py```
    
-Control the ego vehicle with arrow keys.
-Data is appended to /home/m/Paper/Code/Simulator/Right (update the path as needed for your environment).
-To generate a full dataset, run the simulation repeatedly (e.g., in a loop or manually) and process the output file into a clean CSV.
+3. Control the ego vehicle with arrow keys.
 
-Example Output Data Format
-The output file (Right) is a CSV-like text file with columns:
+4. Data is appended to /home/m/Paper/Code/Simulator/Right (update the path as needed for your environment).
 
-Longitudinal distance (ambulance - ego)
-Lateral distance (ambulance - ego)
-Ego longitudinal velocity
-Ego acceleration
+5. To generate a full dataset, run the simulation repeatedly (e.g., in a loop or manually) and process the output file into a clean CSV.
 
-Sample row: 10.5,1.2,8.31,0.5
-Notes on Dataset
+## Example Output Data Format
+The output file (```Right```) is a CSV-like text file with columns:
 
-Data is generated in real-time based on simulation physics (kinematic bicycle model for ego vehicle).
-Randomness is introduced in ego initial position for variability.
-For ML training, preprocess the data (e.g., normalize, label optimal maneuvers based on thesis criteria).
-In the thesis (page 20-35), this dataset is used to train models for predicting optimal lane changes or speed adjustments.
+- Longitudinal distance (ambulance - ego)
+  
+- Lateral distance (ambulance - ego)
+  
+- Ego longitudinal velocity
+  
+- Ego acceleration
 
-Next Steps
+## Notes on Dataset
 
-Clean and preprocess the generated data (e.g., using Pandas).
-Train ML models (e.g., decision trees or neural networks) as described in the thesis.
+- Data is generated in real-time based on simulation physics (kinematic bicycle model for ego vehicle).
+  
+- Randomness is introduced in ego initial position for variability.
+
+- For ML training, preprocess the data (e.g., normalize, label optimal maneuvers based on thesis criteria).
+  
+- In the thesis (page 20-35), this dataset is used to train models for predicting optimal lane changes or speed adjustments.
+
+## Next Steps
+
+- Clean and preprocess the generated data (e.g., using Pandas).
+  
+- Train ML models (e.g., decision trees or neural networks) as described in the thesis.
 For full details, refer to the thesis PDF.
 
-License
+## License
+
 MIT License - Feel free to use and modify for educational purposes.
 
-
-  
-  ``` pip install pygame,numpy```
-- Place images in the same directory as the script or update paths accordingly.
