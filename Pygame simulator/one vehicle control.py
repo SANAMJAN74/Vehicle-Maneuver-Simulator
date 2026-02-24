@@ -207,9 +207,9 @@ class Start:
             # Columns: long_dist_amu_ego, lat_dist_amu_ego, ego_long_vel, ego_acc
             # Commented lines are for additional vehicles if needed
             if amu.position_disp[1] > 1:
-                out_file_path = '/home/m/Paper/Code/Simulator/Right'  # Update this path to your desired output file
-                with open(out_file_path, 'a') as outFile:
-                    outFile.write(str(amu.position_disp[1] - ecar.position_disp[1]))  # Long dist amu-ego
+                out_file_path = open('Right.txt', 'a')  # Update this path to your desired output file
+                with open('Right.txt', 'a') as outFile:
+                    #outFile.write(str(amu.position_disp[1] - ecar.position_disp[1]))  # Long dist amu-ego
                     outFile.write(",")
                     outFile.write(str(amu.position_disp[0] - ecar.position_disp[0]))  # Lat dist amu-ego
                     outFile.write(",")
