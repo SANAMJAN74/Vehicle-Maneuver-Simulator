@@ -7,7 +7,7 @@ The simulation models an ego vehicle (controlled by the user) interacting with o
 
 - ```simulator/:``` Contains the simulation scripts (e.g., one_vehicle_control.py).
 
-- ```data/:``` Generated datasets (e.g., CSV files like Right for longitudinal/lateral distances, velocities, etc.).
+- ``` data/:``` Generated datasets (e.g., CSV files like Right for longitudinal/lateral distances, velocities, etc.).
 
 - ```Image/:``` Image for the simulation (e.g., car.png, amu.png, car1.png, etc.).
 
