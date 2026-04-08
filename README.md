@@ -1,7 +1,7 @@
 # Optimality Analysis of Ahead Vehicle Maneuver in Front of Emergency Vehicle
 
 This repository contains my Master's thesis project on analyzing optimal maneuvers of vehicles ahead of an emergency vehicle. The project involves simulating traffic scenarios using Pygame, generating datasets for training machine learning models, and analyzing vehicle behaviors for safety and efficiency.
-The simulation models an ego vehicle (controlled by the user) interacting with other vehicles, including an ambulance, in a multi-lane road environment. Data is collected on positions, velocities, and accelerations to create datasets for further analysis or ML training.
+The simulation models an ego vehicle (controlled by the user) interacting with other vehicles, including an ambulance, in a multi-lane road environment. Data is collected on positions, velocities, and accelerations to create datasets for ML training models.
 
 ## Repository Structure
 
